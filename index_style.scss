@@ -1,0 +1,148 @@
+
+@import "mixins";
+@import "resets";
+@import "variables";
+
+
+
+/* Navigation 
+   ========================================================================== */
+
+.navigation {
+    
+    margin-top: $mpf + 2;
+    margin-left: calculation(200px, 100px);
+    margin-right: $mpf;
+    float: right;
+    font-size: $mpf * 2;
+    text-transform: uppercase;
+    font-weight: calculation(500, 400);
+    
+}
+    ul li {
+     @include noDec;
+    float: left;
+    padding: $mpf + 5;  
+        
+
+    
+        a{
+           color: $mc;
+          @include noDec;
+            
+            &:hover {
+                
+         color: $hv;
+    transition: all 0.45s;
+                
+                
+            }
+            
+        }  
+}
+
+
+/* Images
+   ========================================================================== */
+
+.banner{
+    @include backImage('../Images/banner.jpg');
+}
+
+
+.logo {
+       @include position;
+}
+
+
+
+/* Body
+   ========================================================================== */
+
+body{
+    margin: 0;
+color: $mc;
+line-height: 1.6;
+}
+
+
+
+.header {
+    
+    background: $bb;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 99;
+    
+}
+
+h2{
+    font-family: scriptina;
+    font-size: $mpf * 8;
+    margin-top: calculation(100px, 30px);
+}
+
+p{
+    @extend .email;
+  padding-bottom: $mpf + 5;
+  
+}
+
+.email{
+    @include noDec;
+    margin: $mpf + 5;
+    color: $bg;
+    font-family: sans-serif;
+    font-size: $fontDiff;
+}
+
+.about{
+    
+    
+    text-align: center; 
+}
+
+
+.portfolio{
+    display: flex;
+    position: absolute;
+}
+
+
+
+
+.buttons{
+
+    @include noDec;
+    border: 1.2px solid;
+    border-radius: 15px;
+    padding: $mpf;
+    font-size: $mpf + 3;
+    background: darken($darken, 5%);
+    
+    
+    &:hover {
+    background: $mc;
+}
+
+}
+
+
+h1 a {
+    
+    @include noDec;
+    margin-right: $mpf * 2;
+    color: $mc;
+    margin-left: $mpf * 9;
+   font-size: $fSize;
+    
+}
+
+h3{ 
+    margin-bottom: $mpf * 2;
+    opacity: random(60) / 40;
+}
+
+
+

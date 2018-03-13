@@ -1,0 +1,45 @@
+/* Images - Mixins
+   ========================================================================== */
+
+@mixin backImage($image) {
+ background: url($image);
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+}
+
+/* Font Face
+   ========================================================================== */
+
+@font-face{ 
+	font-family: 'scriptina';
+	src: url('scriptina.woff');
+    src: url('scriptina.woff') format('woff');}
+
+@font-face{ 
+	font-family: 'rounded_elegance';
+	src: url('rounded_elegance.woff');
+    src: url('rounded_elegance.woff') format('woff');}
+
+/* Mixins
+   ========================================================================== */
+
+@mixin position {
+    
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+@mixin noDec{
+     text-decoration: none;
+    list-style: none;
+}
+
+
+@function calculation($some-number, $another-number){
+  @return $some-number + $another-number
+}

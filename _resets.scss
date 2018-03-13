@@ -1,0 +1,69 @@
+/* Imports
+   ========================================================================== */
+
+
+/* email, buttons, about, portfolio - one colour */
+
+.email:hover,
+.buttons,
+.about,
+.portfolio .box1, 
+.portfolio .box2,
+.portfolio .box3 {
+    
+    color: #000f09;
+}
+
+
+/* header, banner, portfolio, about, buttons - one font */
+
+.header,
+.banner h3,
+.portfolio h4,
+.about h4,
+.buttons {
+    
+    font-family: rounded_elegance;
+}
+
+
+/* portfolio box 3, buttons - one colour */
+
+.portfolio .box3,
+.buttons {
+    
+    background: #fafafa;
+}
+
+
+/* portfolio div, about - same padding */
+
+.portfolio div,
+.about {
+    padding: 20px;
+}
+
+
+/* portfolio and portfolio paragraph - center */
+
+.portfolio,
+.portfolio p {
+    
+    text-align: center;
+}
+
+/*  portfolio h4 and paragraph - left */
+
+
+.portfolio h4,
+p {
+    text-align: left;
+}
+
+
+/* contact and h3 - one font size */
+
+.contact, 
+h3 {
+    font-size: 25px;
+}

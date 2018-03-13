@@ -1,0 +1,31 @@
+/* Images ========================================================================== */
+@font-face { font-family: 'scriptina'; src: url("scriptina.woff"); src: url("scriptina.woff") format("woff"); }
+@font-face { font-family: 'rounded_elegance'; src: url("rounded_elegance.woff"); src: url("rounded_elegance.woff") format("woff"); }
+.email:hover, .buttons, .portfolio .box1, .portfolio .box2, .portfolio .box3 { color: #000f09; }
+
+.header, .h3, .h4, .buttons { font-family: rounded_elegance; }
+
+/* Navigation  ========================================================================== */
+.navigation { margin-top: 12px; margin-left: 300px; margin-right: 10px; float: right; font-size: 20px; text-transform: uppercase; font-weight: 900; }
+
+ul li { list-style: none; float: left; padding: 15px; }
+ul li a { color: #fafafa; text-decoration: none; }
+ul li a:hover { color: #737373; transition: all 0.45s; }
+
+/* Images ========================================================================== */
+.banner { background: url("../Images/banner.jpg"); background-size: cover; background-position: center; display: flex; flex-direction: column; align-items: center; text-align: center; }
+
+.image { margin-top: 30px; }
+
+.logo { position: absolute; top: 20px; left: 20px; }
+
+/* Body ========================================================================== */
+body { margin: 0; color: #fafafa; line-height: 1.6; }
+
+.header { background: #000f09; width: 100%; top: 0; position: fixed; z-index: 99; }
+
+h2 { font-family: scriptina; font-size: 80px; margin-top: 130px; }
+
+.email { text-decoration: none; margin: 15px; color: #3e3e3e; font-family: sans-serif; font-size: 15px; }
+
+/*# sourceMappingURL=index_style.css.map */
